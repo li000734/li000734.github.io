@@ -55,3 +55,39 @@ h3+ul {
     font-weight: bold;
 }
 
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: orange;
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+section ol li:last-child{
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    background-color: #d5836c;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
