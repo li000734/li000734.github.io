@@ -18,6 +18,8 @@
 
         <main>
             <table>
+                <h3>My email</h3>
+                <P>000734@algonquinlive.com</P>
                 <caption>Student Information</caption>
                 <thead>
                   <tr>
@@ -33,13 +35,12 @@
                     <td>040992256</td>
                   </tr>
                 </tbody>
-              </table>
-              <section>
-                <h3>We love to hear from you!</h3>
-                <form action="Thanks.html" method="get">
+            </table>
+            <section>
+                <h3>Contact Me</h3>
                     <div>
                         <label for="fullname">Your Name</label>
-                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr.">
+                        <input type="text" id="fullname" name="fullname" placeholder="" required>
                     </div>
                     <div>
                         <label for="youremail">Email</label>
@@ -50,26 +51,27 @@
                         <textarea name="message" id="message"></textarea>
                     </div>
                     <div>
-                        <label for="tickets">How many tickets</label>
-                        <input type="number" id="tickets" name="tickets" min="2" max="10" step="2">
-                    </div>
-                    <div>
-                        <label for="row">Select row</label>
-                        <select name="row" id="row">
-                            <option value="front">Front Row</option>
-                            <option value="center" selected>Center Row</option>
-                            <option value="back">Back Row</option>
+                        <label for="courses">Form Course</label>
+                        <select name="courses" id="courses">
+                            <option value="digg">21S_MTM6160_010_020</option>
+                            <option value="webd1">21S_MTM6130_020</option>
+                            <option value="desfond">21S_MTM6162_020</option>
+                            <option value="introph">21S_MTM6101_020</option>
+                            <option value="desthink">21S_DSN2100M_351</option>
+                            <option value="comm1">21S_ENL1813M_310</option>
                         </select>
                     </div>
                     <div>
-                        <h3>How you been here before</h3>
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="yes" name="past" value="yes" checked>
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="past" value="no">
+                        <h4>Are you</h4>
+                        <label for="student">Student</label>
+                        <input type="radio" id="student" name="past" value="student">
+                        <label for="professor">Professor</label>
+                        <input type="radio" id="professor" name="past" value="professor">
+                        <label for="guest">Guest</label>
+                        <input type="radio" id="guest" name="past" value="guest">
                     </div>
                     <div>
-                        <h3>Policies</h3>
+                        <h3></h3>
                         <input type="checkbox" id="policies" name="policies">
                         <label for="policies">I agree with the Policies</label>
                     </div>
