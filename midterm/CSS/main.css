@@ -1,5 +1,8 @@
-head {
+header {
     background-image: url("../images/lone-starfish-wide.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 body {
     color: darkslategray;
@@ -17,12 +20,7 @@ p {
     background-color: lightblue;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    text-decoration: underline;
-}
+
 
 nav ul {
     list-style: none;
