@@ -16,18 +16,18 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <Li><a href="contact.html">contact Us</a></Li>
+                    <a href="#story" class="orange-link">Story</a>
+                    <a href="#contact" class="orange-link">Contact</a>
                 </ul>
             </nav>
         </header>
         <!-- Main content of the page-->
         <main>
             <!-- Adding on page link -->
-            <a href="#treatofweek" class="orange-link">Treat of the week</a>
             <article>
                 <h2>Life of a Starfish</h2>
-                <img src="./images/coffee-shop.jpg" alt="coffee cup">
-                <p>
+                <img src="./images/lone-starfish.jpg" alt="starfish">
+                <p id="story">
                     Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
                 </p>
                 <blockquote class="large-text">
@@ -35,9 +35,15 @@
                 </blockquote>
                 <hr>
                 <section>
-                    <H3>Ottawa</H3>
+                    <H3>Facts About Starfish</H3>
                     <P>
-                        We are a local coffee shop based in Ottawa, Our specialty is <b>organic fair-trade</b> coffee
+                        Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+
+                        Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
+
+                        Herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+
+                        Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
                     </P>
                 </section>
             </article>
@@ -56,29 +62,7 @@
                     <li>July 17<sup>th</sup> - Live Music</li>
                 </ol>
             </section>
-            <section id="treatofweek">
-                <h3>Treat of the week</h3>
-                <dl>
-                    <dt>Name</dt>
-                    <dd>Banana bread</dd>
-                    <dt>Calories</dt>
-                    <dd>250</dd>
-                    <dt>Ingredient</dt>
-                    <dd>
-                        <ul>
-                            <li>all</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                        </ul>
-                    </dd>
-                </dl>
-                <a href="https://www.bilibili.com/video/BV1gJ411z7gf?from=search&seid=16769583424701473918" target="_blank" class="orange-link large-text">Get the Recipe</a>
-            </section>
+            
                 <h3>Menu Specials</h3> 
                 <table>
                     <thead>
@@ -110,6 +94,78 @@
         <footer>
             Copyright Thunder's Coffee Shop, 2021
         </footer>
+
+
+        <main id="contact">
+            <h2>Contact Us</h2>
+            <table>
+                <caption>Hour Of Operation</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mon -Fri</td>
+                        <td>6 AM - 9 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td>8 AM - 11 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+            <section>
+                <h3>contact to learn more</h3>
+                <form action="Thanks.html" method="get">
+                    <div>
+                        <label for="fullname">Your Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr.">
+                    </div>
+                    <div>
+                        <label for="youremail">Email</label>
+                        <input type="email" id="youremail" name="youremail" required>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div>
+                        <label for="tickets">How many tickets</label>
+                        <input type="number" id="tickets" name="tickets" min="2" max="10" step="2">
+                    </div>
+                    <div>
+                        <label for="row">Select row</label>
+                        <select name="row" id="row">
+                            <option value="front">Front Row</option>
+                            <option value="center" selected>Center Row</option>
+                            <option value="back">Back Row</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>How you been here before</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="past" value="yes" checked>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="past" value="no">
+                    </div>
+                    <div>
+                        <h3>Policies</h3>
+                        <input type="checkbox" id="policies" name="policies">
+                        <label for="policies">I agree with the Policies</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+
 
 
     </body>
