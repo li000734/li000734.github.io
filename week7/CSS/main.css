@@ -12,6 +12,18 @@ body {
 img {
     width: 100%;
 }
+
+/* Display and box-sizing */
+
+nav ul li {
+    display: inline-block;
+    width: 49%;
+}
+
+nav ul a {
+    display: block;
+}
+
 /*
 this is a note
 */
@@ -39,12 +51,21 @@ nav ul a {
     text-decoration: none;
 }
 
+
+.orange-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
 #treatofweek {
+    position: relative;
     background: orange url(../images/bread.jpg) no-repeat center center / cover;
     background-size: cover;
     color: white;
     font-size: 1.5rem;
-    padding: 1em;
+    padding: 1em 1em 5em 1em; 
     width: 50%;
 }
 
@@ -52,7 +73,29 @@ nav ul a {
     background-color: darkslategrey;
     color: orange;
     text-decoration: none;
+    padding: 1.5em;
+    display: block;
+    width: 300px;
 }
+
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+section {
+    clear: both;
+}
+
+aside{
+    width: 20%;
+}
+
 .large-text {
     font-size: 24px;
 }
