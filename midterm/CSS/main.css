@@ -5,6 +5,15 @@ header {
     background-size: cover;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
 .blue-link {
     display: inline-block;
     background: lightblue;
