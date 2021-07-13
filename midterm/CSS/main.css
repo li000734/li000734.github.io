@@ -5,7 +5,12 @@ header {
     background-size: cover;
 }
 
-
+.blue-link {
+    display: inline-block;
+    background: lightblue;
+    width: 200px;
+    height: 40px;
+}
 
 body {
     background-color: lightblue;
