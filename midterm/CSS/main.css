@@ -1,13 +1,15 @@
 h1 {
+    font-size: 60px;
+    color: white;
     position: absolute;
     top: 200px;
     left: 580px;
 }
 
+
 img {
     width: 100%;
 }
-
 
 
 nav ul li{
@@ -23,6 +25,7 @@ nav ul li{
     padding: 5em;
 }
 
+
 h2 {
     font-size: 40px;
 }
@@ -36,16 +39,6 @@ body {
 }
 
 
-h1 {
-    font-size: 60px;
-    color: white;
-}
-
-
-
-.blue-link {
-
-}
 
 
 h3+ul {
