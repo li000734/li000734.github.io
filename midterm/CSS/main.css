@@ -1,11 +1,13 @@
 h1 {
+    width: 100%;
     font-size: 60px;
     color: white;
-    position: absolute;
-    top: 200px;
-    left: 580px;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
 
 img {
     width: 100%;
@@ -20,6 +22,7 @@ nav ul li{
 }
 
 .link {
+    width: 100%;
     text-decoration: none;
     color: black;
     padding: 5em;
