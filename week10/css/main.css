@@ -61,7 +61,7 @@ html {
 
 
 *,
-*::after
+*::after,
 *::before {
     box-sizing: inherit;
 }
@@ -147,6 +147,28 @@ p {
     text-align: center;
 }
 
+
+/* -----------=-- Navigation-------=----------*/
+.nav-list li{
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00add8;
+    color: inherit;
+}
+
 /* ----------------------- mob section-------------------------*/
 
 .btn {
@@ -162,6 +184,20 @@ p {
     color: inherit;
     background-color: #00add8;
 }
+
+/* ----------Simple Actions section---------*/
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 
 .site-footer {
     border-top: 2px solid #00add8;

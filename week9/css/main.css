@@ -61,7 +61,7 @@ html {
 
 
 *,
-*::after
+*::after,
 *::before {
     box-sizing: inherit;
 }
