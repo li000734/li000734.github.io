@@ -137,5 +137,73 @@ p {
 .banner {
     height: 600px;
     background: gray url("../images/mobile-banner.jpg") no-repeat center bottom;
+    background-size: cover;
 }
 
+.banner h1 {
+    margin: 0;
+    padding-top: 250px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ----------------------- mob section-------------------------*/
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+    color: inherit;
+    background-color: #00add8;
+}
+
+.site-footer {
+    border-top: 2px solid #00add8;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.copy {
+    text-align: right;
+}
+
+/* Desktop Styles */
+
+@media screen and (min-width:600px) {
+    html {
+        font-size: 16px;
+    }    
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: inline-box;
+        max-width: 300px;
+    }
+
+    .banner{
+        background-image: url("../images/desktop-banner.jpg");
+    }
+
+    .banner h1 {
+        color: white;
+    }
+    
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .app .btn {
+        float: right;
+    }
+}
