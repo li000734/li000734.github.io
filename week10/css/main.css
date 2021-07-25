@@ -233,6 +233,22 @@ p {
         color: white;
     }
     
+    /* Navigation */
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
+
     .app img {
         width: 40%;
         float: left;
@@ -241,5 +257,14 @@ p {
 
     .app .btn {
         float: right;
+    }
+}
+
+/* 800% and above */
+
+
+@media screen and (min-width:800px) {
+    .actions-list {
+        max-width: 20%;
     }
 }
