@@ -272,5 +272,6 @@ footer {
 
 
 .copy {
+    max-width: %;
     color: #c78c06;
 }
