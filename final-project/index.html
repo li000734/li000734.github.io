@@ -6,22 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project - Home</title>
-    <!-- add link for the icon font** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="container">
     <header>
         <nav>
-            <!-- move the img to list**-->
-            <img src="./images/logo.png" alt="logo" class="logo">
             <ul class="nav-list">
+                <img src="./images/logo.png" alt="logo" class="logo">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact</a></li>
-                <!-- add list item with the form tag with label, input and button** -->
+                <input type="text" placeholder="Search..">
+                <button type="search">Search</button>
             </ul>
         </nav>
     </header>
@@ -30,7 +32,6 @@
     <main>
         <div class="banner">
             <div>
-            <!-- add a div around h1, p and a for background-color** -->
             <h1>Welcome to Three Star Media</h1>
             </div>
             <div>
@@ -47,7 +48,6 @@
 
 
         <div class="aboutus">
-            <!-- add a diva round img, h2 and paragraphs for adding max-width** -->
             <div>
             <img src="./images/about-us.jpg" alt="about-us">
             </div>
@@ -171,7 +171,6 @@
             <div class="contact-form">
                 <h3>Send us a message</h3>
                 <form>
-                <!-- add a form tag around the lines 162 - 174**-->
                 <div>
                     <label for="fullname">Full Name</label>
                     <input type="text" id="fullname" name="fullname" placeholder="" required>
@@ -221,7 +220,6 @@
     <!-- Site footer -->
     <footer class="site-footer">
         <div class="copy">
-        <!-- add a div around the praragraphs for max-width** -->
         <p>
             &copy; Copyright Three Star Media, 2020
         </p>
