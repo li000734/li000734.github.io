@@ -16,14 +16,12 @@
     <header>
         <nav>
             <ul class="nav-list">
-                <img src="./images/logo.png" alt="logo" class="logo">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="home">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact</a></li>
-                <input type="text" placeholder="Search..">
-                <button type="search">Search</button>
+                <li><input type="text" placeholder="Search.." class="search"><button type="search" class="searchbtn">Search</button></li>
             </ul>
         </nav>
     </header>
@@ -31,30 +29,28 @@
 
     <main>
         <div class="banner">
-            <div>
+            <div class="welcome">
+
             <h1>Welcome to Three Star Media</h1>
-            </div>
-            <div>
-            <p>
+ 
+            <p class="wwhitetext">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam sapiente quam illo iste obcaecati ipsa
                 voluptas doloribus, quasi vero deserunt doloremque similique quia rem, odit nesciunt dolore eum autem
                 corporis.
             </p>
-            </div>
-            <div>
+
+  
             <a href="#" target="_blank" class="connectbtn">Connect with us</a>
             </div>
         </div>
 
 
         <div class="aboutus">
-            <div>
-            <img src="./images/about-us.jpg" alt="about-us">
+            <div class="abimg">
+            <img src="./images/about-us.jpg" alt="about-us" class="auimgs">
             </div>
-            <div>
+            <div class="abp">
             <h2>About Us</h2>
-            </div>
-            <div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit rerum sequi eaque eligendi suscipit
                 consequatur maiores nobis harum est, accusamus maxime modi quae doloremque at repudiandae pariatur
@@ -68,12 +64,11 @@
             </div>
         </div>
 
-        <section class="container">
+        <section class="sections">
             <h2>Our Services</h2>
-
             <div class="services">
                 <div class="digital">
-                    <img src="./images/digital.jpg" alt="digital">
+                    <img src="./images/digital.jpg" alt="digital" class="imgs">
                     <h3>Digital Transformation</h3>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus odio animi qui
@@ -84,7 +79,7 @@
                 </div>
 
                 <div class="marketing">
-                    <img src="./images/marketing.jpg" alt="marketing">
+                    <img src="./images/marketing.jpg" alt="marketing" class="imgs">
                     <h3>Marketing</h3>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus odio animi qui
@@ -95,7 +90,7 @@
                 </div>
 
                 <div class="video">
-                    <img src="./images/video.jpg" alt="video">
+                    <img src="./images/video.jpg" alt="video" class="imgs">
                     <h3>Video Production</h3>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus odio animi qui
@@ -106,7 +101,7 @@
                 </div>
 
                 <div class="web">
-                    <img src="./images/web.jpg" alt="web">
+                    <img src="./images/web.jpg" alt="web" class="imgs">
                     <h3>Web development</h3>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus odio animi qui
@@ -117,7 +112,7 @@
                 </div>
 
                 <div class="print">
-                    <img src="./images/print.jpg" alt="print">
+                    <img src="./images/print.jpg" alt="print" class="imgs">
                     <h3>Print</h3>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptatibus odio animi qui
@@ -133,19 +128,22 @@
 
         <section>
             <div class="vision">
+                <div class="invision">
                 <h3 class="whitehead">Our Vision</h3>
-
                 <p class="whitetext">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, corrupti? Sapiente commodi
                     dignissimos repudiandae odio sunt, corporis itaque doloremque quos perferendis beatae. Inventore
                     rerum reiciendis ipsum quasi repellat fugit aspernatur?
                 </p>
-                <a href="#" target="_blank" class="learnbtn">Learn More</a>
+                <a href="#" target="_blank" class="btn">Learn More</a>
+                </div>
             </div>
         </section>
-        <section>
+
+        <section class="sections">
             <h2>Our Team</h2>
-            <img src="./images/john.jpg" alt="john">
+            <div class="ourteam">
+            <img src="./images/john.jpg" alt="john" class="imgjohn">
             <div class="john">
                 <h3>John Doe</h3>
                 <p>CEO and Co-owner</p>
@@ -155,7 +153,7 @@
                     laboriosam molestias ut.
                 </p>
             </div>
-            <img src="./images/bob.jpg" alt="bob">
+            <img src="./images/bob.jpg" alt="bob" class="imgbob">
             <div class="bob">
                 <h3>Bob Rite</h3>
                 <p>CFO and Co-owner</p>
@@ -165,9 +163,14 @@
                     laboriosam molestias ut.
                 </p>
             </div>
+            </div>
         </section>
-        <section>
+
+
+
+        <section class="sections">
             <h2>Contact US</h2>
+            <div class="contactus">
             <div class="contact-form">
                 <h3>Send us a message</h3>
                 <form>
@@ -184,11 +187,11 @@
                     <textarea name="message" id="message"></textarea>
                 </div>
                 </form>
-                <button type="submit">Send</button>
+                <button type="submit" class="send">Send</button>
             </div>
             <div class="hours">
                 <h3>Hours of operation</h3>
-                <table>
+                <table class="table">
                     <thead>
                         <tr>
                             <th colspan="1">Days</th>
@@ -212,6 +215,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.915258700108!2d-75.75914377318215!3d45.349667566398914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2s1385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%203G7!5e0!3m2!1sen!2sca!4v1628179445465!5m2!1sen!2sca"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
             </div>
         </section>
 

@@ -1,14 +1,34 @@
 
 h1 {
     font-family: 'Inter', sans-serif;
-    font-weight: 800;
+    font-size: 100px;
 }
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font: bold;
+    font-size: 25px;
+}
+
+.sections {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+
 
 /* Nav and Head */
 
 
-.logo {
-    width: ;
+.home {
+    height: 100px;
+    background: #c78c06 url("../images/logo.png") no-repeat left bottom;
+    
 }
 
 header {
@@ -16,13 +36,12 @@ header {
 }
 
 .nav-list li{
+    list-style: none;
     border-bottom: 1px solid grey;
     text-align: center;
 }
 
-a,
-a:link,
-a:visited {
+a {
     color: #c78c06;
 }
 
@@ -30,7 +49,6 @@ a:hover,
 a:focus {
     color: black;
 }
-
 
 .nav-list a,
 .nav-list a:link,
@@ -47,16 +65,36 @@ a:focus {
     color: inherit;
 }
 
+.search {
+    width: 1000px;
+}
+
+
+
 /* Nav and Head */
 
 
 
+.whitehead {
+    color: white;
+    font-size: 40px;
+}
 
+.whitetext {
+    color: white;
+}
 
 
 
 
 /* welcome */
+.welcome {
+    margin-left: 100px;
+    margin-right: 100px;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+
 .banner {
     height: 600px;
     background: gray url("../images/main-banner.jpg") no-repeat center bottom;
@@ -64,11 +102,22 @@ a:focus {
 }
 
 .banner h1 {
-    margin: 0;
-    padding-top: 250px;
-    text-transform: uppercase;
-    text-align: center;
+    color: white;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
 }
+
+.wwhitetext {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+
+
 /* welcome */
 
 
@@ -84,14 +133,37 @@ a:focus {
 
 /* about us  */
 .aboutus {
-    background-color: #ffe6ac;
+    background-color:#ffe6ac;
+}
+
+
+.auimgs {
+    padding-top: 40px;
+    max-width: 500px;
+    margin-left: 100px;
+}
+
+.abp {
+
+    margin-right: 100px;
+
+}
+.aboutus {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
-.aboutus img {
-    grid-row: 1/3;
+
+.abimg {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
+.abp {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
 /* about us  */
 
 
@@ -99,20 +171,22 @@ a:focus {
 
 /* BTN */
 .connectbtn {
+    margin-left: 20px;
+    margin-bottom: 20px;
     text-decoration: none;
     display: inline-block;
     padding: 20px;
-    color: inherit;
+    color: black;
     background-color: #c78c06;
 }
 
 .btn {
+    color: white;
     text-decoration: none;
     display: inline-block;
     border: 1px solid gray;
     border-radius: 4px;
     padding: 20px;
-    color: inherit;
     background-color: #222;
 }
 
@@ -126,6 +200,12 @@ a:focus {
     background-color: #222;
 }
 
+.send {
+    margin-top: 10px;
+    border: 1px solid #c78c06;
+    background-color: #222;
+    color: #c78c06;
+}
 
 /* BTN */
 
@@ -178,18 +258,22 @@ a:focus {
 
 
 /* Our Vision */
-.whitehead {
 
+
+.invision {
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
 }
 
-.whitetext {
-    
-}
 
 .vision {
     background: gray url("../images/vision.jpg") no-repeat center center;
     background-size: cover;
 }
+
+
 /* Our Vision */
 
 
@@ -203,27 +287,50 @@ a:focus {
 
 
 /* Our Team */
+
+.ourteam {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.bob {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.john {
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.imgjohn {
+    max-width: 530px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.imgbob {
+    max-width: 530px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
 .john {
     background-color: #ffe6ac;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
-}
-.john img {
-    grid-row: 1/4;
+
 }
 
 
 .bob {
     background-color: #ffe6ac;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
 }
-.bob img {
-    position: ;
-    grid-row: 1/4;
-}
+
 
 .teamtext {
     border-top: 2px solid #c78c06;
@@ -243,7 +350,27 @@ a:focus {
 
 
 /* contact */
+.contactus {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.contact-form {
+    flex-basis: calc(43% - 4px);
+}
+
+.location {
+    flex-basis: calc(43% - 4px);
+}
+
+.hours {
+    flex-basis: calc(50% - 4px);
+    order: 1;
+}
+
+.table {
+
+}
 thead {
     border-collapse: collapse;
     background-color: #ffe6ac;
@@ -265,20 +392,16 @@ table td:nth-child(n) {
 
 /*  Footer  */
 
-.site-footer {
-    margin-top: 20px;
-    padding: 20px 0;
-}
-
 
 
 footer {
+    padding: 1mm;
     background-color: #222;
 }
 
 
 
 .copy {
-    max-width: %;
+    margin: 50px;
     color: #c78c06;
 }
