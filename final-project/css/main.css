@@ -52,6 +52,7 @@ table {
 
 .container {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* 760px+ */
@@ -450,6 +451,7 @@ footer {
 
 
 .copy {
-    margin: 50px;
     color: #c78c06;
 }
+
+/*  End here  */
