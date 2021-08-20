@@ -50,26 +50,52 @@ table {
 
 /* Start here */
 
+.container {
+    max-width: 1200px;
+}
+
+/* 760px+ */
+
+@media screen and (min-width:760px) {
+    .ourteam {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .bob {
+        flex-basis: calc(50%);
+    }
+    
+    .john {
+        flex-basis: calc(50%);
+        
+    }
+    
+    .imgjohn {
+        flex-basis: calc(50%);
+    }
+    
+    .imgbob {
+        flex-basis: calc(50%);
+        order: 1;
+    }    
+}
+
+
+/* texts */
+h1,
+h2,
+h3,
+p {
+    font-family: 'Open Sans', sans-serif;;
+}
 
 h1 {
-    font-family: 'Inter', sans-serif;
     font-size: 100px;
 }
 
-h2 {
-    font-size: 40px;
-}
-
-h3 {
-    font: bold;
-    font-size: 25px;
-}
-
 .sections {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+
 }
 
 
@@ -168,8 +194,6 @@ a:focus {
     text-align: left;
 }
 
-
-
 /* welcome */
 
 
@@ -190,30 +214,14 @@ a:focus {
 
 
 .auimgs {
-    padding-top: 40px;
-    max-width: 500px;
-    margin-left: 100px;
+    max-width: 50%;
 }
 
 .abp {
 
-    margin-right: 100px;
-
-}
-.aboutus {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
 }
 
-.abimg {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.abp {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
+
 
 
 /* about us  */
@@ -340,37 +348,6 @@ a:focus {
 
 /* Our Team */
 
-.ourteam {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.bob {
-    padding-left: 20px;
-    padding-right: 20px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.john {
-    padding-left: 20px;
-    padding-right: 20px;
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.imgjohn {
-    max-width: 530px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.imgbob {
-    max-width: 530px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
 
 
 .john {
@@ -408,15 +385,15 @@ a:focus {
 }
 
 .contact-form {
-    flex-basis: calc(43% - 4px);
+    flex-basis: calc(50% - 4px);
 }
 
 .location {
-    flex-basis: calc(43% - 4px);
+    flex-basis: calc(50% - 4px);
 }
 
 .hours {
-    flex-basis: calc(50% - 4px);
+    flex-basis: calc(100% - 4px);
     order: 1;
 }
 
