@@ -220,9 +220,6 @@ a:focus {
 
 
 
-
-
-
 /* about us  */
 
 
@@ -417,9 +414,7 @@ a:focus {
     order: 1;
 }
 
-.table {
 
-}
 thead {
     border-collapse: collapse;
     background-color: #ffe6ac;
