@@ -234,6 +234,7 @@ a:focus {
     padding: 20px;
     color: black;
     background-color: #c78c06;
+    cursor: pointer;
 }
 
 .btn {
@@ -244,6 +245,7 @@ a:focus {
     border-radius: 4px;
     padding: 20px;
     background-color: #222;
+    cursor: pointer;
 }
 
 .learnbtn {
@@ -254,6 +256,7 @@ a:focus {
     padding: 20px;
     color: inherit;
     background-color: #222;
+    cursor: pointer;
 }
 
 .send {
@@ -261,6 +264,7 @@ a:focus {
     border: 1px solid #c78c06;
     background-color: #222;
     color: #c78c06;
+    cursor: pointer;
 }
 
 /* BTN */
