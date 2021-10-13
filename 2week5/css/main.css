@@ -29,4 +29,139 @@
 .b4 {
     background-color: darkblue;
 }
- 
+
+/******
+  Css Transition
+*******/
+
+.transition .b1 {
+    /******transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; ***/
+    transition: all 1s ease-in-out 2s;
+}
+
+.transition .b1:hover {
+    width: 400px;
+    height: 300px;
+}
+
+.transition .b2 {
+    transition: width 1s, height .5s;
+    transition-timing-function: ease-out;
+    transition-delay: .5s;
+}
+
+.transition .b2:hover {
+    width: 250px;
+    height: 250px;
+}
+
+
+.transition .b3 {
+    transition: transform 1s cubic-bezier(.51, -0.38, 0.52, 1.46) 0.5s;
+}
+
+.transition .b3:hover {
+    transform: rotate(80deg);
+}
+
+.transition .b4 {
+    transition: all 1s ease-in;
+}
+
+.transition .b4:hover {
+    background-color: chartreuse;
+    border-radius: 30px;
+}
+
+
+/******
+  Css transform
+*******/
+
+.transform .b1:hover {
+    transform: translate(20px, 30px);
+}
+
+
+.transform .b2:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.transform .b3 {
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.transform .b4 {
+    transform: skewX(45deg) skewY(15deg) scale(.5) rotate(45deg);
+}
+
+/******
+  Css Animation
+*******/
+
+@keyframes changeColor {
+    from {
+        background-color: pink;
+    }
+    to {
+        background-color: orange;
+    }
+}
+
+.animation .b1 {
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes moveAround {
+    0%{
+        transform：translate(0,0);
+    }
+    25%{
+        transform：translate(200px,0);
+    }
+    50%{
+        transform：translate(200px,200px);
+    }
+    75%{
+        transform：translate(0,200px);
+    }
+    100%{
+        transform：translate(0,0);
+    }
+  
+}
+
+.animation .b2 {
+    animation-name: moveAround;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+
+@keyframes transformMe {
+    0% {
+        transform: scale(.5) rotate(0) translateX(0);
+    }
+    100% {
+        transform: scale(1) rotateX(180deg) translateX(800px);
+    }
+}
+
+.animation .b3 {
+    animation-name: transformMe;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in-out;
+}
+
+.animation .b4 {
+    animation: transformMe 1.5s 3s infinite alternate forwards linear;
+}
